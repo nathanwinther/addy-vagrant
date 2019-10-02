@@ -65,3 +65,17 @@ npm install --save-dev .
 gulp
 ```
 
+## MySQL
+
+From host
+
+```
+mysql -h127.0.0.1 -P6612 -uvagrant -pvagrant adverator
+```
+
+From guest
+
+```
+mysql -uroot adverator
+```
+

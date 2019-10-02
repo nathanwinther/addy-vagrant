@@ -13,7 +13,7 @@ export DEBIAN_FRONTEND="noninteractive"
 sudo -E apt-get install -yq mysql-server
 
 sudo sed -i -e "s/^bind-address\s*=.*/bind-address = 0.0.0.0/g" /etc/mysql/my.cnf
-sudo sed -i -e "s/^max_allowed_packet\s*=.*/max_allowed_packet = 64M/g" /etc/mysql/my.cnf
+sudo sed -i -e "s/^max_allowed_packet\s*=.*/max_allowed_packet = 256M/g" /etc/mysql/my.cnf
 
 sudo service mysql restart
 

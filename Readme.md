@@ -39,6 +39,29 @@ mkdir ops
 Vagrant
 
 ```
-git clone TODO vagrant
+git clone git@github.com:nathanwinther/addy-vagrant.git vagrant
+```
+
+## Vagrant
+
+Vagrant
+
+```
+vagrant up
+```
+
+Host
+
+```
+192.168.33.10 dev.adverator.com devops.adverator.com
+```
+
+## Node/Gulp
+
+```
+vagrant ssh
+cd /var/www/html/www
+npm install --save-dev .
+gulp
 ```
 

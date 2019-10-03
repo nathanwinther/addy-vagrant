@@ -60,5 +60,6 @@ sudo ln -sf /vagrant/nginx_adverator_ops.conf /etc/nginx/sites-enabled/adverator
 
 sudo service nginx restart
 
+# environment vars
 sudo ln -sf /vagrant/profile_vagrant.sh /etc/profile.d/vagrant.sh
 

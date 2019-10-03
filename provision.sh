@@ -24,7 +24,7 @@ mysql -uroot --execute="GRANT ALL PRIVILEGES ON *.* TO 'vagrant'@'%'; FLUSH PRIV
 mysql -uroot --execute="CREATE DATABASE IF NOT EXISTS adverator DEFAULT CHARACTER SET = 'utf8';" mysql
 
 # php
-apt-get install -y php5-cli php5-fpm php5-curl php5-imap php5-mysql
+sudo apt-get install -y php5-cli php5-fpm php5-curl php5-imap php5-mysql
 
 sudo sed -i -e "s/^short_open_tag\s*=.*/short_open_tag = On/g" /etc/php5/cli/php.ini
 sudo sed -i -e "s/^short_open_tag\s*=.*/short_open_tag = On/g" /etc/php5/fpm/php.ini

@@ -40,7 +40,7 @@ sudo php -r "unlink('composer-setup.php');"
 # https://github.com/nodesource/distributions/blob/master/README.md#debmanual
 curl -sSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
 
-VERSION=node_10.x
+VERSION=node_6.x
 DISTRO="$(lsb_release -s -c)"
 
 echo "deb https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee /etc/apt/sources.list.d/nodesource.list

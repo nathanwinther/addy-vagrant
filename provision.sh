@@ -10,7 +10,7 @@ echo "mysql-server mysql-server/root_password_again password \"''\"" | sudo debc
 
 # mysql
 export DEBIAN_FRONTEND="noninteractive"
-sudo -E apt-get install -yq mysql-server
+sudo -E apt-get install -yq mysql-server-5.6
 
 sudo sed -i -e "s/^bind-address\s*=.*/bind-address = 0.0.0.0/g" /etc/mysql/my.cnf
 sudo sed -i -e "s/^max_allowed_packet\s*=.*/max_allowed_packet = 256M/g" /etc/mysql/my.cnf
@@ -40,7 +40,7 @@ sudo php -r "unlink('composer-setup.php');"
 # https://github.com/nodesource/distributions/blob/master/README.md#debmanual
 curl -sSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
 
-VERSION=node_6.x
+VERSION=node_10.x
 DISTRO="$(lsb_release -s -c)"
 
 echo "deb https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee /etc/apt/sources.list.d/nodesource.list

@@ -79,3 +79,9 @@ From guest
 mysql -uroot adverator
 ```
 
+or
+
+```
+mysql -uvagrant -pvagrant adverator
+```
+

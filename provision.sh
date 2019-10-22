@@ -63,3 +63,5 @@ sudo service nginx restart
 # environment vars
 sudo ln -sf /vagrant/profile_vagrant.sh /etc/profile.d/vagrant.sh
 
+ln -s /var/www/html/www /home/vagrant/www
+ln -s /var/www/html/ops /home/vagrant/ops

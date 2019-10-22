@@ -60,7 +60,7 @@ Host
 
 ```
 vagrant ssh
-cd /var/www/html/www
+cd www
 npm install --save-dev .
 gulp
 ```

@@ -55,6 +55,7 @@ sudo npm install gulp-cli -g
 # nginx
 sudo apt-get install -y nginx
 
+sudo rm -f /etc/nginx/sites-enabled/default
 sudo ln -sf /vagrant/nginx_adverator_www.conf /etc/nginx/sites-enabled/adverator_www.conf
 sudo ln -sf /vagrant/nginx_adverator_ops.conf /etc/nginx/sites-enabled/adverator_ops.conf
 
@@ -63,5 +64,3 @@ sudo service nginx restart
 # environment vars
 sudo ln -sf /vagrant/profile_vagrant.sh /etc/profile.d/vagrant.sh
 
-ln -s /var/www/html/www /home/vagrant/www
-ln -s /var/www/html/ops /home/vagrant/ops

@@ -60,7 +60,7 @@ Host
 
 ```
 vagrant ssh
-cd www
+cd /var/www/adverator
 npm install --save-dev .
 gulp
 ```

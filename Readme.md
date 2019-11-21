@@ -53,7 +53,7 @@ vagrant up
 Host
 
 ```
-192.168.33.10 dev.adverator.com devops.adverator.com
+192.168.33.10 dev.addy.co dev.adverator.com devops.adverator.com
 ```
 
 ## Node/Gulp

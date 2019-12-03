@@ -26,6 +26,9 @@ mysql -uroot --execute="CREATE DATABASE IF NOT EXISTS adverator DEFAULT CHARACTE
 # php
 sudo apt-get install -y php5-cli php5-fpm php5-curl php5-imap php5-mysql
 
+sudo ln -s /etc/php5/mods-available/imap.ini /etc/php5/cli/conf.d/20-imap.ini
+sudo ln -s /etc/php5/mods-available/imap.ini /etc/php5/fpm/conf.d/20-imap.ini
+
 sudo sed -i -e "s/^short_open_tag\s*=.*/short_open_tag = On/g" /etc/php5/cli/php.ini
 sudo sed -i -e "s/^short_open_tag\s*=.*/short_open_tag = On/g" /etc/php5/fpm/php.ini
 

@@ -17,8 +17,11 @@ sudo sed -i -e "s/^max_allowed_packet\s*=.*/max_allowed_packet = 256M/g" /etc/my
 
 sudo service mysql restart
 
-# mysql create vagrant user
+# mysql create 'vagrant'@'%' user
 mysql -uroot --execute="GRANT ALL PRIVILEGES ON *.* TO 'vagrant'@'%'; FLUSH PRIVILEGES; SET PASSWORD FOR 'vagrant'@'%' = PASSWORD('vagrant');" mysql
+
+# mysql create 'root'@'%' user (required for contacts trigger
+mysql -uroot --execute="GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'; FLUSH PRIVILEGES;" mysql
 
 # mysql create adverator database
 mysql -uroot --execute="CREATE DATABASE IF NOT EXISTS adverator DEFAULT CHARACTER SET = 'utf8';" mysql

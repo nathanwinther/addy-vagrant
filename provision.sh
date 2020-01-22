@@ -61,6 +61,8 @@ sudo npm install gulp-cli -g
 # nginx
 sudo apt-get install -y nginx
 
+sudo sed -i -e "s/sendfile on;/sendfile off;/g" /etc/nginx/nginx.conf
+
 sudo rm -f /etc/nginx/sites-enabled/default
 sudo cp /vagrant/nginx_addy_www.conf /etc/nginx/sites-available/addy_www.conf
 sudo cp /vagrant/nginx_adverator_www.conf /etc/nginx/sites-available/adverator_www.conf

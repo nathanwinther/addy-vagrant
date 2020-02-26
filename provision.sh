@@ -42,7 +42,7 @@ sudo php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 sudo php -r "unlink('composer-setup.php');"
 
-# node 6.x
+# node 10.x
 # https://github.com/nodesource/distributions/blob/master/README.md#debmanual
 curl -sSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
 
